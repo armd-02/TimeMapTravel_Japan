@@ -45,12 +45,6 @@
         },
         "download": false
     },
-    "PoiView": {
-        "targets": [
-            "activity"
-        ],
-        "update_mode": "filter" // listTable更新時 all:全て / filter:絞り込み / "":非連動
-    },
     "google": {
         "Analytics": "",
         "AppScript": "",
