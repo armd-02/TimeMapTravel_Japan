@@ -1,0 +1,131 @@
+// Community Mapmaker User Config
+{
+    "map": {
+        "tileName": "Kansai2010", // タイル一覧は config-system.jsonc へ
+        "viewCenter": [
+            135.48061,
+            34.72014
+        ],
+        "viewPitch": 40,
+        "maxBounds": "",
+        "_maxBounds": [
+            [
+                135.4,
+                34.65
+            ],
+            [
+                135.55,
+                34.8
+            ]
+        ],
+        "initZoom": 17,
+        "maxZoom": 23,
+        "modalZoom": 19 // モーダルダイアログ表示時のズームサイズ   
+    },
+    "view": {
+        "poiZoom": {
+            // アイコンの前後位置は後ろの方が手前になる
+            "activity": 7
+        },
+        "poiFilter": "filter" // listTable更新時 all:全て / filter:絞り込み / "":非連動
+    },
+    "etc": {
+        "editMode": false, // 編集メニューの表示/非表示
+        "thumbnailWidth": "240",
+        "splashUrl": "./image/splash.png"
+    },
+    "listTable": {
+        "category": "activity", // カテゴリ選択 / activity:アクティビティリスト / tags:タグ
+        "target": "activity", // target名:overpass名を表示 / activity:google sheetsを表示 / tags:osm poi種別名を表示
+        "allActs": true, // true: 全てのactivityを常に表示 / false: 画面内のActivityのみ表示
+        "playback": {
+            "view": false,
+            "zoomLevel": 15,
+            "timer": 4000
+        },
+        "download": false
+    },
+    "PoiView": {
+        "targets": [
+            "activity"
+        ],
+        "update_mode": "filter" // listTable更新時 all:全て / filter:絞り込み / "":非連動
+    },
+    "google": {
+        "Analytics": "",
+        "AppScript": "",
+        "targetName": "activity"
+    },
+    "static": {
+        "mode": false,
+        "osmjson": ""
+    },
+    "wikipedia": {
+        "marker": "wikipedia.svg",
+        "api_": "wikipedia.org/w/api.php?format=json&action=query&prop=extracts%7Cimages&exintro=&explaintext=&titles=",
+        "api": "wikipedia.org/api/rest_v1/page/summary/",
+        "domain": "wikipedia.org",
+        "tag": "wikipedia",
+        "image": true
+    },
+    "menu": {
+        "main": [
+            // トップメニュー一覧
+            {
+                "glot-model": "about",
+                "linkto": "https://github.com/armd-02/TimeMapTravel_Kansai",
+                "divider": false
+            },
+            {
+                "glot-model": "licence_title",
+                "linkto": "javascript:cMapmaker.licence()",
+                "divider": false
+            },
+            {
+                "glot-model": "develop_site",
+                "linkto": "https://github.com/armd-02/TimeMapTravel_Kansai",
+                "divider": false
+            },
+            {
+                "glot-model": "openstreetmap",
+                "linkto": "https://www.openstreetmap.org/about",
+                "divider": false
+            }
+        ],
+        // 詳細表示のハンバーガーメニュー
+        "modal": [
+            /*{
+                "glot-model": "act_add",
+                "linkto": "javascript:modal_activities.edit({form:'Playgrounds'})",
+                "divider": false
+            },*/
+            {
+                "glot-model": "osm_open",
+                "linkto": "javascript:winCont.osm_open(cMapMaker.open_osmid)",
+                "divider": false
+            },
+            {
+                "glot-model": "button_close",
+                "linkto": "javascript:winCont.modal_close()",
+                "divider": false
+            }
+        ],
+        // 詳細モーダルの追加ボタン 
+        "buttons": [
+            /*
+            {
+                "btn_class": "btn btn-light border-secondary mr-2",
+                "code": "javascript:modal_activities.edit({form:'Welcome2024'})",
+                "icon_class": "fas fa-plus",
+                "btn_glot_name": "add_activity"
+            },
+            */
+            {
+                "btn_class": "btn btn-light border-secondary",
+                "code": "javascript:cMapMaker.shareURL()",
+                "icon_class": "fas fa-clone",
+                "btn_glot_name": "share_link"
+            }
+        ]
+    }
+}

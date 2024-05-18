@@ -1,0 +1,66 @@
+{
+	"site_title": {
+		"ja": "TimeMapTravel in Kansai ",
+		"en": "TimeMapTravel in Kansai "
+	},
+	"site_subtitle": {
+		"ja": "Powered by Community Map Maker",
+		"en": "Powered by Community Map Maker"
+	},
+	"about": {
+		"ja": "TimeMapTravel in Kansai について",
+		"en": "about TimeMapTravel in Kansai "
+	},
+	"about_message": {
+		"ja": "",
+		"en": ""
+	},
+	"owner": {
+		"ja": "コミュニティマップメーカー開発サイト",
+		"en": "Community Map Maker development site"
+	},
+	"licence_title": {
+		"ja": "利用規約",
+		"en": "Terms of Use"
+	},
+	"licence_message": {
+		"ja": "OpenStreetMap Contributors",
+		"en": "OpenStreetMap Contributors"
+	},
+	"more_message": {
+		"ja": "",
+		"en": ""
+	},
+	"eventdates": {
+		"ja": "開催期間: ",
+		"en": "Event Dates: "
+	},
+	"activities": {
+		"ja": "活動履歴",
+		"en": "Activities"
+	},
+	"actdate": {
+		"ja": "確認日",
+		"en": "Disaster Date"
+	},
+	"ds_detail_url": {
+		"ja": "詳細URL",
+		"en": "Detail URL"
+	},
+	"act_memo": {
+		"ja": "説明",
+		"en": "Detail"
+	},
+	"act_picture_url1": {
+		"ja": "写真URL1",
+		"en": "Picture URL1"
+	},
+	"act_picture_url2": {
+		"ja": "写真URL2",
+		"en": "Picture URL2"
+	},
+	"act_picture_url3": {
+		"ja": "写真URL3",
+		"en": "Picture URL3"
+	}
+}

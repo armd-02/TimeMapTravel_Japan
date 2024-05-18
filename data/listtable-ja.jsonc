@@ -1,0 +1,37 @@
+{
+    "list": {
+        "height": 0.2,
+        "columns": {
+            "common": [
+                {
+                    "id": "osmid",
+                    "hidden": true
+                },
+                {
+                    "id": "category",
+                    "hidden": true
+                },
+                {
+                    "id": "title",
+                    "name": "タイトル",
+                    "width": "50%"
+                },
+                {
+                    "id": "event",
+                    "name": "イベント",
+                    "width": "50%"
+                }
+            ],
+            "poi_fields": [
+                "id",
+                "#name"
+            ],
+            "act_fields": [
+                "id",
+                "category",
+                "title",
+                "event"
+            ]
+        }
+    }
+}
