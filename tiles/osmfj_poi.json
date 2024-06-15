@@ -1,11 +1,10 @@
 {
     "version": 8,
-    "name": "Kansai 2015/12/07",
+    "name": "community mapmaker",
     "sources": {
         "openmaptiles": {
-            "url": "pmtiles://./tiles/kansai20151207.pmtiles",
-            "type": "vector",
-            "attribution": "Date 2015/12/07 / <a href=\"https://openstreetmap.org\">&copy OpenStreetMap contributors</a>"
+            "url": "https://tile.openstreetmap.jp/data/planet.json",
+            "type": "vector"
         }
     },
     "layers": [
@@ -3450,7 +3449,7 @@
             "type": "fill-extrusion",
             "source": "openmaptiles",
             "source-layer": "building",
-            "minzoom": 13,
+            "minzoom": 14,
             "layout": {
                 "visibility": "visible"
             },
@@ -5283,9 +5282,9 @@
                 "text-max-width": 9
             },
             "paint": {
-                "text-color": "hsl(0, 0%, 41%)",
-                "text-halo-blur": 0.5,
-                "text-halo-color": "hsl(0, 0%, 100%)",
+                "text-color": "hsl(0, 0%, 0%)",
+                "text-halo-blur": 0,
+                "text-halo-color": "#ffffff",
                 "text-halo-width": 1
             },
             "metadata": {},
@@ -5351,7 +5350,7 @@
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
                 ],
-                "text-size": 12,
+                "text-size": 14,
                 "icon-image": "{subclass}_11",
                 "text-field": "{name:ja}",
                 "visibility": "visible",
@@ -5364,9 +5363,9 @@
                 "text-max-width": 9
             },
             "paint": {
-                "text-color": "hsl(0, 0%, 41%)",
-                "text-halo-blur": 0.5,
-                "text-halo-color": "hsl(0, 0%, 100%)",
+                "text-color": "hsl(0, 0%, 0%)",
+                "text-halo-blur": 0,
+                "text-halo-color": "#ffffff",
                 "text-halo-width": 1
             },
             "metadata": {},
@@ -5432,7 +5431,7 @@
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
                 ],
-                "text-size": 14,
+                "text-size": 12,
                 "icon-image": "{class}_11",
                 "text-field": "{name}",
                 "visibility": "visible",
@@ -5445,9 +5444,9 @@
                 "text-max-width": 9
             },
             "paint": {
-                "text-color": "hsl(0, 0%, 41%)",
-                "text-halo-blur": 0.5,
-                "text-halo-color": "hsl(0, 0%, 100%)",
+                "text-color": "hsl(0, 0%, 0%)",
+                "text-halo-blur": 0,
+                "text-halo-color": "#ffffff",
                 "text-halo-width": 1
             },
             "metadata": {},
@@ -5513,7 +5512,7 @@
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
                 ],
-                "text-size": 14,
+                "text-size": 12,
                 "icon-image": "{class}_11",
                 "text-field": "{name:ja}",
                 "visibility": "visible",
@@ -5526,9 +5525,9 @@
                 "text-max-width": 9
             },
             "paint": {
-                "text-color": "hsl(0, 0%, 41%)",
-                "text-halo-blur": 0.5,
-                "text-halo-color": "hsl(0, 0%, 100%)",
+                "text-color": "hsl(0, 0%, 0%)",
+                "text-halo-blur": 0,
+                "text-halo-color": "#ffffff",
                 "text-halo-width": 1
             },
             "metadata": {},
@@ -5594,7 +5593,7 @@
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
                 ],
-                "text-size": 14,
+                "text-size": 12,
                 "icon-image": "{class}_11",
                 "text-field": "{name}",
                 "visibility": "visible",
@@ -5659,7 +5658,7 @@
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
                 ],
-                "text-size": 14,
+                "text-size": 12,
                 "icon-image": "{class}_11",
                 "text-field": "{name:ja}",
                 "visibility": "visible",
@@ -5725,7 +5724,7 @@
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
                 ],
-                "text-size": 14,
+                "text-size": 12,
                 "icon-image": "{class}_11",
                 "text-field": "{name}",
                 "visibility": "visible",
@@ -5789,7 +5788,7 @@
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
                 ],
-                "text-size": 14,
+                "text-size": 12,
                 "icon-image": "{class}_11",
                 "text-field": "{name:ja}",
                 "visibility": "visible",

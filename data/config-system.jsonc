@@ -23,8 +23,14 @@
         "Kansai2015": {
             "style": "./tiles/kansai20151207.json"
         },
+        "Kansai2018": {
+            "style": "./tiles/kansai20181203.json"
+        },
+        "Kansai2020": {
+            "style": "./tiles/kansai20201207.json"
+        },
         "OSMFJ": {
-            "style": "./tiles/osmfj.json"
+            "style": "./tiles/osmfj_poi.json"
         }
         /*
         "OSM_Standard": {

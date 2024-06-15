@@ -1,11 +1,11 @@
 {
     "version": 8,
-    "name": "Kansai 2015/12/07",
+    "name": "Kansai 2018/12/03",
     "sources": {
         "openmaptiles": {
-            "url": "pmtiles://./tiles/kansai20151207.pmtiles",
+            "url": "pmtiles://https://armd-01.sakura.ne.jp/kansai-20181203.pmtiles",
             "type": "vector",
-            "attribution": "Date 2015/12/07 / <a href=\"https://openstreetmap.org\">&copy OpenStreetMap contributors</a>"
+            "attribution": "Date 2018/12/03 / <a href=\"https://openstreetmap.org\">&copy OpenStreetMap contributors</a>"
         }
     },
     "layers": [
@@ -5270,7 +5270,7 @@
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
                 ],
-                "text-size": 14,
+                "text-size": 12,
                 "icon-image": "{subclass}_11",
                 "text-field": "{name}",
                 "visibility": "visible",
@@ -5428,13 +5428,14 @@
             "source-layer": "poi",
             "minzoom": 16,
             "layout": {
+                "icon-size": 1.2,
                 "text-font": [
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
                 ],
                 "text-size": 14,
                 "icon-image": "{class}_11",
-                "text-field": "{name}",
+                "text-field": "{name:latin}",
                 "visibility": "visible",
                 "text-anchor": "top",
                 "text-offset": [
@@ -5720,12 +5721,12 @@
             "source-layer": "poi",
             "minzoom": 14.2,
             "layout": {
-                "icon-size": 0.9,
+                "icon-size": 1,
                 "text-font": [
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
                 ],
-                "text-size": 14,
+                "text-size": 12,
                 "icon-image": "{class}_11",
                 "text-field": "{name}",
                 "visibility": "visible",
@@ -5784,12 +5785,12 @@
             "source-layer": "poi",
             "minzoom": 14.2,
             "layout": {
-                "icon-size": 0.9,
+                "icon-size": 1,
                 "text-font": [
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
                 ],
-                "text-size": 14,
+                "text-size": 12,
                 "icon-image": "{class}_11",
                 "text-field": "{name:ja}",
                 "visibility": "visible",

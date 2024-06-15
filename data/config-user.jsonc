@@ -3,8 +3,8 @@
     "map": {
         "tileName": "Kansai2010", // タイル一覧は config-system.jsonc へ
         "viewCenter": [
-            135.48061,
-            34.72014
+            135.4967874,
+            34.7033348
         ],
         "viewPitch": 40,
         "maxBounds": "",
@@ -18,7 +18,7 @@
                 34.8
             ]
         ],
-        "initZoom": 17,
+        "initZoom": 12,
         "maxZoom": 23,
         "modalZoom": 19 // モーダルダイアログ表示時のズームサイズ   
     },
@@ -33,6 +33,17 @@
         "editMode": false, // 編集メニューの表示/非表示
         "thumbnailWidth": "240",
         "splashUrl": "./image/splash.png"
+    },
+    "selectItem": { // 選択リストの内容を手動記載 / 空の時は [] とする
+        "menu": {
+            "2010年時点の地図(関西)": "Kansai2010",
+            "2012年時点の地図(関西)": "Kansai2012",
+            "2015年時点の地図(関西)": "Kansai2015",
+            "2018年時点の地図(関西)": "Kansai2018",
+            "2020年時点の地図(関西)": "Kansai2020",
+            "最新地図(全世界)": "OSMFJ"
+        },
+        "action": "ChangeMap" // ChangeMap:背景地図切り替え
     },
     "listTable": {
         "category": "activity", // カテゴリ選択 / activity:アクティビティリスト / tags:タグ

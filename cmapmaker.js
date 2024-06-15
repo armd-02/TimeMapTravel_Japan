@@ -10,20 +10,20 @@ class CMapMaker {
 		this.id = 0;
 		this.moveMapBusy = 0;
 		this.changeKeywordWaitTime;
-	};
+	}
 
 	addEvents() {
-		console.log("CMapMaker: init.");
-		mapLibre.on('moveend', this.eventMoveMap.bind(cMapMaker));   		// マップ移動時の処理
-		mapLibre.on('zoomend', this.eventZoomMap.bind(cMapMaker));			// ズーム終了時に表示更新
-		list_keyword.addEventListener('change', this.eventChangeKeyword.bind(cMapMaker));	// 
-		list_category.addEventListener('change', this.eventChangeCategory.bind(cMapMaker));	// category change
-	};
+		console.log("CMapMaker: init.")
+		mapLibre.on('moveend', this.eventMoveMap.bind(cMapMaker))   		// マップ移動時の処理
+		mapLibre.on('zoomend', this.eventZoomMap.bind(cMapMaker))			// ズーム終了時に表示更新
+		list_keyword.addEventListener('change', this.eventChangeKeyword.bind(cMapMaker))	// 
+		list_category.addEventListener('change', this.eventChangeCategory.bind(cMapMaker))	// category change
+	}
 
 	about() {
-		let msg = { msg: glot.get("about_message"), ttl: glot.get("about") };
+		let msg = { msg: glot.get("about_message"), ttl: glot.get("about") }
 		winCont.modal_open({ "title": msg.ttl, "message": msg.msg, "mode": "close", callback_close: winCont.modal_close, "menu": false });
-	};
+	}
 
 	licence() {			// About license
 		let msg = { msg: glot.get("licence_message") + glot.get("more_message"), ttl: glot.get("licence_title") };
@@ -294,10 +294,12 @@ class CMapMaker {
 							console.log("eventMoveMap:" + targets)
 							if (Conf.view.poiFilter !== "") {		// 非連動以外は更新
 								listTable.makeList();					// view all list
-								listTable.makeSelectList(Conf.listTable.category)
+								if (Conf.selectItem.menu == []) {
+									listTable.makeSelectList(Conf.listTable.category)
+								}
 								listTable.filterCategory(listTable.getSelCategory())
-								this.viewArea(targets);	// in targets
-								this.viewPoi(targets);	// in targets
+								this.viewArea(targets)	// in targets
+								this.viewPoi(targets)	// in targets
 								this.makeImages()
 							};
 							resolve();
@@ -349,11 +351,20 @@ class CMapMaker {
 
 	// EVENT: カテゴリ変更時のイベント
 	eventChangeCategory() {
-		let selcategory = listTable.getSelCategory();
-		let targets = Conf.listTable.target == "targets" ? [selcategory] : ["-"];
-		listTable.filterCategory(selcategory);
-		if (Conf.view.poiFilter == "filter") { this.viewPoi(targets) };	// in targets
-		let catname = selcategory !== "-" ? `?category=${selcategory}` : "";
-		history.replaceState('', '', location.pathname + catname + location.hash);
+		if (Conf.selectItem.menu == []) {	// listTableリンク時
+			let selcategory = listTable.getSelCategory()
+			let targets = Conf.listTable.target == "targets" ? [selcategory] : ["-"]
+			listTable.filterCategory(selcategory)
+			if (Conf.view.poiFilter == "filter") { this.viewPoi(targets) }	// in targets
+			let catname = selcategory !== "-" ? `?category=${selcategory}` : ""
+			history.replaceState('', '', location.pathname + catname + location.hash)
+		} else {	// 手動時
+			switch (Conf.selectItem.action){
+				case "ChangeMap":
+					mapLibre.changeMap(list_category.value)
+			}
+			let catname = `?category=${list_category.value}`
+			history.replaceState('', '', location.pathname + catname + location.hash)
+		}
 	};
 };

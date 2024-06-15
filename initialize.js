@@ -54,18 +54,24 @@ window.addEventListener("DOMContentLoaded", function () {
 			mapLibre.addControl("bottom-right", "maplist", "<button onclick='cMapMaker.changeMap()'><i class='fas fa-layer-group fa-lg'></i></button>", "maplibregl-ctrl-group");
 			mapLibre.addControl("bottom-right", "global_status", "", "text-information");	// Make: progress
 			mapLibre.addControl("bottom-right", "global_spinner", "", "spinner-border text-primary d-none");
-			mapLibre.addControl("bottom-left", "images", "", "showcase");	// add images
-			mapLibre.addControl("bottom-left", "zoomlevel", "");
-			winCont.playback(Conf.listTable.playback.view);			// playback control view:true/false
-			winCont.download(Conf.listTable.download);				// download view:true/false
-			cMapMaker.mode_change("map");							// initialize last_modetime
-			winCont.menu_make(Conf.menu.main, "main_menu");
-			winCont.mouseDragScroll(images, cMapMaker.viewImage);	// set Drag Scroll on images
+			mapLibre.addControl("bottom-left", "images", "", "showcase")	// add images
+			mapLibre.addControl("bottom-left", "zoomlevel", "")
+			winCont.playback(Conf.listTable.playback.view)			// playback control view:true/false
+			winCont.download(Conf.listTable.download)				// download view:true/false
+			cMapMaker.mode_change("map")							// initialize last_modetime
+			winCont.menu_make(Conf.menu.main, "main_menu")
+			winCont.mouseDragScroll(images, cMapMaker.viewImage)	// set Drag Scroll on images
 			glot.render();
 
 			const init_close = function () {
-				listTable.makeSelectList(Conf.listTable.category);	// Must be executed before eventMoveMap
-				let eventMoveMap = cMapMaker.eventMoveMap.bind(cMapMaker);
+				if (Conf.selectItem.menu == []) {
+					listTable.makeSelectList(Conf.listTable.category)	// Must be executed before eventMoveMap
+				} else {	// Make SelectItem(Manual)
+					Object.keys(Conf.selectItem.menu).forEach(key => {
+						winCont.select_add('list_category', key, Conf.selectItem.menu[key])
+					})
+				}
+				let eventMoveMap = cMapMaker.eventMoveMap.bind(cMapMaker)
 				eventMoveMap().then(() => {
 					winCont.splash(false);
 					if (location.search !== "") {    							// 引数がある場合
@@ -78,15 +84,19 @@ window.addEventListener("DOMContentLoaded", function () {
 							let keyv = param.split('/');
 							switch (keyv[0]) {
 								case "category":
-									listTable.selectCategory(keyv[1]);
-									cMapMaker.eventChangeCategory();
-									break;
+									if (Conf.selectItem.menu == []) {	// listTableリンク時
+										listTable.selectCategory(keyv[1])
+									} else {						// 手動時は直接指定
+										list_category.value = keyv[1]
+									}
+									cMapMaker.eventChangeCategory()
+									break
 								case "node":
 								case "way":
 								case "relation":
-									let subparam = param.split('.');					// split child elements(.)
-									cMapMaker.viewDetail(subparam[0], subparam[1]);
-									break;
+									let subparam = param.split('.')					// split child elements(.)
+									cMapMaker.viewDetail(subparam[0], subparam[1])
+									break
 							}
 						}
 					}

@@ -5037,7 +5037,7 @@
                     "Noto Sans Regular"
                 ],
                 "text-size": 12,
-                "text-field": "{name:latin}",
+                "text-field": "{name}",
                 "visibility": "visible",
                 "text-max-width": 5,
                 "symbol-placement": "line"
@@ -5110,7 +5110,7 @@
                     "Noto Sans Regular"
                 ],
                 "text-size": 12,
-                "text-field": "{name:latin}",
+                "text-field": "{name}",
                 "visibility": "visible",
                 "text-max-width": 5
             },
@@ -5191,7 +5191,7 @@
                     "Noto Sans Regular"
                 ],
                 "text-size": 12,
-                "text-field": "{name:latin}",
+                "text-field": "{name}",
                 "visibility": "visible",
                 "text-max-width": 5
             },
@@ -5272,7 +5272,7 @@
                 ],
                 "text-size": 12,
                 "icon-image": "{subclass}_11",
-                "text-field": "{name:latin}",
+                "text-field": "{name}",
                 "visibility": "visible",
                 "text-anchor": "top",
                 "text-offset": [
@@ -5434,8 +5434,8 @@
                 ],
                 "text-size": 12,
                 "icon-image": "{class}_11",
-                "text-field": "{name:latin}",
-                "visibility": "none",
+                "text-field": "{name}",
+                "visibility": "visible",
                 "text-anchor": "top",
                 "text-offset": [
                     0,
@@ -5516,7 +5516,7 @@
                 "text-size": 12,
                 "icon-image": "{class}_11",
                 "text-field": "{name:ja}",
-                "visibility": "none",
+                "visibility": "visible",
                 "text-anchor": "top",
                 "text-offset": [
                     0,
@@ -5596,8 +5596,8 @@
                 ],
                 "text-size": 12,
                 "icon-image": "{class}_11",
-                "text-field": "{name:latin}",
-                "visibility": "none",
+                "text-field": "{name}",
+                "visibility": "visible",
                 "text-anchor": "top",
                 "text-offset": [
                     0,
@@ -5662,7 +5662,7 @@
                 "text-size": 12,
                 "icon-image": "{class}_11",
                 "text-field": "{name:ja}",
-                "visibility": "none",
+                "visibility": "visible",
                 "text-anchor": "top",
                 "text-offset": [
                     0,
@@ -5727,8 +5727,8 @@
                 ],
                 "text-size": 12,
                 "icon-image": "{class}_11",
-                "text-field": "{name:latin}",
-                "visibility": "none",
+                "text-field": "{name}",
+                "visibility": "visible",
                 "text-anchor": "top",
                 "text-offset": [
                     0,
@@ -5792,7 +5792,7 @@
                 "text-size": 12,
                 "icon-image": "{class}_11",
                 "text-field": "{name:ja}",
-                "visibility": "none",
+                "visibility": "visible",
                 "text-anchor": "top",
                 "text-offset": [
                     0,
@@ -5899,14 +5899,15 @@
             "type": "symbol",
             "source": "openmaptiles",
             "source-layer": "poi",
-            "minzoom": 12,
+            "minzoom": 11,
             "layout": {
-                "icon-size": 1.2,
+                "icon-size": 0.9,
                 "text-font": [
-                    "Noto Sans Bold"
+                    "Roboto Condensed Italic",
+                    "Noto Sans Italic"
                 ],
                 "text-size": 16,
-                "icon-image": "railway_11",
+                "icon-image": "{class}_11",
                 "text-field": "{name:ja}",
                 "visibility": "visible",
                 "text-anchor": "left",
@@ -5914,18 +5915,16 @@
                     0.9,
                     0
                 ],
-                "text-justify": "center",
                 "text-padding": 2,
                 "text-max-width": 9,
                 "symbol-placement": "point",
                 "text-line-height": 2
             },
             "paint": {
-                "icon-opacity": 1,
+                "text-color": "rgba(0, 0, 0, 1)",
                 "text-opacity": 1,
                 "text-halo-blur": 0,
-                "icon-halo-color": "hsla(0, 0%, 0%, 0)",
-                "text-halo-color": "hsl(0, 0%, 100%)",
+                "text-halo-color": "rgba(255, 255, 255, 0.5)",
                 "text-halo-width": 8
             },
             "metadata": {},
@@ -6326,7 +6325,7 @@
                 ],
                 "text-size": 12,
                 "icon-image": "airport_11",
-                "text-field": "{name:latin}",
+                "text-field": "{name}",
                 "visibility": "visible",
                 "text-anchor": "top",
                 "text-offset": [
@@ -6514,7 +6513,7 @@
                         ]
                     ]
                 },
-                "text-field": "{name:latin}",
+                "text-field": "{name}",
                 "text-max-width": 8
             },
             "paint": {
@@ -6617,7 +6616,7 @@
                         ]
                     ]
                 },
-                "text-field": "{name:latin}",
+                "text-field": "{name}",
                 "text-anchor": "bottom",
                 "text-offset": [
                     0,
@@ -6744,7 +6743,7 @@
                         ]
                     ]
                 },
-                "text-field": "{name:latin}",
+                "text-field": "{name}",
                 "text-anchor": "bottom",
                 "text-offset": [
                     0,
@@ -6862,7 +6861,7 @@
                         ]
                     ]
                 },
-                "text-field": "{name:latin}",
+                "text-field": "{name}",
                 "text-padding": 2,
                 "text-transform": "uppercase",
                 "text-letter-spacing": 0.1
@@ -6955,7 +6954,7 @@
                         ]
                     ]
                 },
-                "text-field": "{name:latin}",
+                "text-field": "{name}",
                 "text-max-width": 6.25,
                 "text-transform": "none"
             },
@@ -7055,7 +7054,7 @@
                         ]
                     ]
                 },
-                "text-field": "{name:latin}",
+                "text-field": "{name}",
                 "text-max-width": 6.25,
                 "text-transform": "none"
             },
@@ -7165,7 +7164,7 @@
                         ]
                     ]
                 },
-                "text-field": "{name:latin}",
+                "text-field": "{name}",
                 "text-max-width": 6.25,
                 "text-transform": "none"
             },
@@ -7275,7 +7274,7 @@
                         ]
                     ]
                 },
-                "text-field": "{name:latin}",
+                "text-field": "{name}",
                 "text-max-width": 6.25,
                 "text-transform": "none"
             },
@@ -7375,7 +7374,7 @@
                     "Noto Sans Italic"
                 ],
                 "text-size": 13,
-                "text-field": "{name:latin}",
+                "text-field": "{name}",
                 "text-justify": "center",
                 "text-transform": "uppercase"
             },
