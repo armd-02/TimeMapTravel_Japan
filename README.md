@@ -1,4 +1,4 @@
-# TimeMapTravel_Kansai 
+# 少し昔の地図を見てみよう
 
 ## Webサイト
 * https://armd-02.github.io/TimeMapTravel_Japan/
