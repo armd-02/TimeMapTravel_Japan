@@ -1,23 +1,23 @@
 {
 	"site_title": {
-		"ja": "昔のOSMを見てみよう in 関西",
-		"en": "TimeMapTravel in Kansai "
+		"ja": "少し昔の地図を見てみよう",
+		"en": "TimeMapTravel"
 	},
 	"site_subtitle": {
-		"ja": "Powered by Community Map Maker",
-		"en": "Powered by Community Map Maker"
+		"ja": "by OpenStreetMap",
+		"en": "by OpenStreetMap"
 	},
 	"about": {
-		"ja": "昔のOSMを見てみよう in 関西について",
-		"en": "about TimeMapTravel in Kansai "
+		"ja": "少し昔の地図を見てみようについて",
+		"en": "about TimeMapTravel"
 	},
 	"about_message": {
-		"ja": "",
-		"en": ""
+		"ja": "10年ひと昔と言いますが、最近はもっと早く色んな変化が街で起きています。<br>これはOpenStreetMapに残された、少し昔の街を見るWebアプリです。",
+		"en": "It may have been 10 years ago, but recently, many changes have been happening in the city much more quickly. <br>This is a web app that allows you to view old towns left on OpenStreetMap."
 	},
 	"owner": {
-		"ja": "コミュニティマップメーカー開発サイト",
-		"en": "Community Map Maker development site"
+		"ja": "開発サイト",
+		"en": "development site"
 	},
 	"licence_title": {
 		"ja": "利用規約",
@@ -30,37 +30,5 @@
 	"more_message": {
 		"ja": "",
 		"en": ""
-	},
-	"eventdates": {
-		"ja": "開催期間: ",
-		"en": "Event Dates: "
-	},
-	"activities": {
-		"ja": "活動履歴",
-		"en": "Activities"
-	},
-	"actdate": {
-		"ja": "確認日",
-		"en": "Disaster Date"
-	},
-	"ds_detail_url": {
-		"ja": "詳細URL",
-		"en": "Detail URL"
-	},
-	"act_memo": {
-		"ja": "説明",
-		"en": "Detail"
-	},
-	"act_picture_url1": {
-		"ja": "写真URL1",
-		"en": "Picture URL1"
-	},
-	"act_picture_url2": {
-		"ja": "写真URL2",
-		"en": "Picture URL2"
-	},
-	"act_picture_url3": {
-		"ja": "写真URL3",
-		"en": "Picture URL3"
 	}
 }

@@ -1,7 +1,7 @@
 // Community Mapmaker User Config
 {
     "map": {
-        "tileName": "Kansai2010", // タイル一覧は config-system.jsonc へ
+        "tileName": "Japan2010", // タイル一覧は config-system.jsonc へ
         "viewCenter": [
             135.4967874,
             34.7033348
@@ -36,11 +36,13 @@
     },
     "selectItem": { // 選択リストの内容を手動記載 / 空の時は [] とする
         "menu": {
-            "2010年時点の地図(関西)": "Kansai2010",
-            "2012年時点の地図(関西)": "Kansai2012",
-            "2015年時点の地図(関西)": "Kansai2015",
-            "2018年時点の地図(関西)": "Kansai2018",
-            "2020年時点の地図(関西)": "Kansai2020",
+            "2010年時点の地図(日本)": "Japan2010",
+            "2012年時点の地図(日本)": "Japan2012",
+            "2014年時点の地図(日本)": "Japan2014",
+            "2016年時点の地図(日本)": "Japan2016",
+            "2018年時点の地図(日本)": "Japan2018",
+            "2020年時点の地図(日本)": "Japan2020",
+            "2022年時点の地図(日本)": "Japan2022",
             "最新地図(全世界)": "OSMFJ"
         },
         "action": "ChangeMap" // ChangeMap:背景地図切り替え
@@ -78,7 +80,7 @@
             // トップメニュー一覧
             {
                 "glot-model": "about",
-                "linkto": "https://github.com/armd-02/TimeMapTravel_Kansai",
+                "linkto": "javascript:cMapmaker.licence()",
                 "divider": false
             },
             {

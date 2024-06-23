@@ -319,8 +319,9 @@
             "filter": [
                 "all",
                 [
-                    "==",
+                    "in",
                     "class",
+                    "farmland",
                     "grass"
                 ]
             ]
@@ -5869,7 +5870,7 @@
                 "icon-opacity": 1,
                 "text-opacity": 1,
                 "text-halo-blur": 0,
-                "text-halo-color": "hsl(0, 0%, 100%)",
+                "text-halo-color": "rgba(255, 255, 255, 0.5)",
                 "text-halo-width": 8
             },
             "metadata": {},
