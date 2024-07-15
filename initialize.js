@@ -12,8 +12,9 @@ const FILES = [
 const glot = new Glottologist();
 var modal_activities = new modal_Activities();
 var modal_wikipedia = new modal_Wikipedia();
+var modal_osmbasic = new modal_OSMbasic();
 var basic = new Basic();
-var OvPassCnt = new OverPassControl();
+var overPassCont = new OverPassControl();
 var mapLibre = new Maplibre();
 var geoCont = new GeoCont();
 var listTable = new ListTable();
@@ -64,7 +65,7 @@ window.addEventListener("DOMContentLoaded", function () {
 			glot.render();
 
 			const init_close = function () {
-				if (Conf.selectItem.menu == []) {
+				if (Conf.selectItem.menu == "") {
 					listTable.makeSelectList(Conf.listTable.category)	// Must be executed before eventMoveMap
 				} else {	// Make SelectItem(Manual)
 					Object.keys(Conf.selectItem.menu).forEach(key => {
@@ -84,7 +85,7 @@ window.addEventListener("DOMContentLoaded", function () {
 							let keyv = param.split('/');
 							switch (keyv[0]) {
 								case "category":
-									if (Conf.selectItem.menu == []) {	// listTableリンク時
+									if (Conf.selectItem.menu == "") {	// listTableリンク時
 										listTable.selectCategory(keyv[1])
 									} else {						// 手動時は直接指定
 										list_category.value = keyv[1]
@@ -109,7 +110,7 @@ window.addEventListener("DOMContentLoaded", function () {
 			let osmids = poiCont.pois().acts.map(act => { return act.osmid })
 			osmids = osmids.filter(Boolean)
 			if (osmids.length > 0 && !Conf.static.mode) {
-				OvPassCnt.getOsmIds(osmids).then(geojson => {
+				basic.retry(() => overPassCont.getOsmIds(osmids),5).then(geojson => {
 					poiCont.add_geojson(geojson)
 					poiCont.setActlnglat()
 					init_close()

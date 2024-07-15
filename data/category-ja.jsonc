@@ -93,6 +93,7 @@
             "yes": "建物"
         },
         "craft": {
+            "brewery": "醸造所",
             "carpenter": "工務店",
             "confectionery": "菓子工房",
             "lighting": "照明工房",
@@ -104,8 +105,12 @@
         "disused:amenity": {
             "school": "廃校"
         },
+        "healthcare": {
+            "alternative": "治療院"
+        },
         "office": {
             "company": "会社",
+            "coworking": "コワーキング(事務所)",
             "estate_agent": "不動産屋",
             "foundation": "財団・協会",
             "government": "政府機関"
@@ -181,6 +186,7 @@
             "travel_agency": "旅行代理店",
             "variety_store": "雑貨店",
             "water": "飲料水専門店",
+            "watches":"時計店",
             "wine": "ワイン専門店"
         },
         "natural": {
@@ -296,6 +302,7 @@
             "works": "工場"
         },
         "leisure": {
+            "adult_gaming_centre":"パチンコ/パチスロ",
             "amusement_arcade": "ゲームセンター",
             "garden": "庭",
             "dance": "ダンスホール",
@@ -341,14 +348,9 @@
         "bookmarked": "スターつき"
     },
     "category_sub": {
-        "gambling": {
+        "amenity": {
             "gambling": {
                 "mahjong": "麻雀"
-            }
-        },
-        "social_facility": {
-            "social_facility": {
-                "shelter": "一時避難所"
             }
         },
         "artwork": {
@@ -369,6 +371,11 @@
                 "streetart": "ストリートアート",
                 "street_art": "ストリートアート",
                 "azulejo": "アズレージョ"
+            }
+        },
+        "healthcare": {
+            "healthcare:speciality": {
+                "acupuncture": "鍼灸院"
             }
         },
         "restaurant": {
@@ -471,6 +478,11 @@
         "parking": {
             "access": {
                 "private": "私用"
+            }
+        },
+        "social_facility": {
+            "social_facility": {
+                "shelter": "一時避難所"
             }
         },
         "tree": {

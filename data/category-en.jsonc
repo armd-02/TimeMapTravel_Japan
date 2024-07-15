@@ -93,6 +93,7 @@
             "yes": "building"
         },
         "craft": {
+            "brewery": "brewery",
             "carpenter": "carpenter",
             "confectionery": "confectionery",
             "lighting": "craft lighting",
@@ -104,8 +105,12 @@
         "disused:amenity": {
             "school": "school(disused)"
         },
+        "healthcare": {
+            "alternative": "alternative"
+        },
         "office": {
             "company": "company",
+            "coworking": "coworking",
             "estate_agent": "estate agent",
             "foundation": "foundation",
             "government": "government"
@@ -181,6 +186,7 @@
             "travel_agency": "travel agency",
             "variety_store": "variety",
             "water": "water",
+            "watches": "watches",
             "wine": "wine"
         },
         "natural": {
@@ -296,6 +302,7 @@
             "works": "works"
         },
         "leisure": {
+            "adult_gaming_centre":"adult gaming centre",
             "amusement_arcade": "amusement arcade",
             "dance": "dance",
             "fitness_centre": "fitness center",
@@ -346,28 +353,30 @@
                 "mahjong": "mahjong"
             }
         },
-        "social_facility": {
-            "social_facility": {
-                "shelter": "temporary sleeping"
+        "artwork": {
+            "artwork_type": {
+                "bust": "bust",
+                "sculpture": "sculpture",
+                "mural": "mural",
+                "graffiti": "graffiti",
+                "installation": "installation",
+                "statue": "statue",
+                "stone": "stone",
+                "painting": "painting",
+                "architecture": "architecture",
+                "mosaic": "mosaic",
+                "tilework": "tilework",
+                "relief": "relief",
+                "fountain": "fountain",
+                "streetart": "streetart",
+                "street_art": "street_art",
+                "azulejo": "azulejo"
             }
         },
-        "artwork_type": {
-            "bust": "bust",
-            "sculpture": "sculpture",
-            "mural": "mural",
-            "graffiti": "graffiti",
-            "installation": "installation",
-            "statue": "statue",
-            "stone": "stone",
-            "painting": "painting",
-            "architecture": "architecture",
-            "mosaic": "mosaic",
-            "tilework": "tilework",
-            "relief": "relief",
-            "fountain": "fountain",
-            "streetart": "streetart",
-            "street_art": "street_art",
-            "azulejo": "azulejo"
+        "healthcare": {
+            "healthcare:speciality": {
+                "acupuncture": "acupuncture"
+            }
         },
         "restaurant": {
             "cuisine": {
@@ -469,6 +478,11 @@
         "parking": {
             "access": {
                 "private": "private"
+            }
+        },
+        "social_facility": {
+            "social_facility": {
+                "shelter": "temporary sleeping"
             }
         },
         "tree": {

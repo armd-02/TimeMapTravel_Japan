@@ -31,6 +31,7 @@
                 "fire_station": "fire-station.svg",
                 "food_court": "restaurant.svg",
                 "fountain": "fountain.svg",
+                "gambling": "coins-solid.svg",
                 "grave_yard": "marker-stroked.svg",
                 "hospital": "hospital.svg",
                 "ice_cream": "ice-cream.svg",
@@ -93,6 +94,7 @@
                 "yes": "home.svg"
             },
             "craft": {
+                "brewery": "storage_fermenter.svg",
                 "carpenter": "anvil_and_hammer.svg",
                 "confectionery": "confectionery.svg",
                 "lighting": "bulb-light.svg",
@@ -104,8 +106,12 @@
             "disused:amenity": {
                 "school": "ruins.svg"
             },
+            "healthcare": {
+                "alternative": "house-medical-solid.svg"
+            },
             "office": {
                 "company": "briefcase.svg",
+                "coworking": "suitcase.svg",
                 "estate_agent": "real_estate_agency.svg",
                 "foundation": "briefcase.svg",
                 "government": "town_hall.svg"
@@ -181,6 +187,7 @@
                 "travel_agency": "briefcase.svg",
                 "variety_store": "shop.svg",
                 "water": "water.svg",
+                "watches": "watch.svg",
                 "wine": "alcohol-shop.svg"
             },
             "natural": {
@@ -311,6 +318,7 @@
                 "recreation_ground": "pitch.svg"
             },
             "leisure": {
+                "adult_gaming_centre":"coins-solid.svg",
                 "amusement_arcade": "gaming.svg",
                 "dance": "music.svg",
                 "fitness_centre": "gym.svg",

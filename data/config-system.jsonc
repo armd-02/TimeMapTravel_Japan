@@ -35,6 +35,12 @@
         "Japan2022": {
             "style": "./tiles/japan-20220101.json"
         },
+        "Japan2023": {
+            "style": "./tiles/japan-20230101.json"
+        },
+        "Japan2024": {
+            "style": "./tiles/japan-20240101.json"
+        },
         "OSMFJ": {
             "style": "./tiles/osmfj_poi.json"
         }

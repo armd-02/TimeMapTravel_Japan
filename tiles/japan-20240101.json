@@ -1,11 +1,11 @@
 {
     "version": 8,
-    "name": "Japan 2020/01/01",
+    "name": "Japan 2024/01/01",
     "sources": {
         "openmaptiles": {
-            "url": "pmtiles://https://armd-01.sakura.ne.jp/tiles/japan-20200101.pmtiles",
+            "url": "pmtiles://https://armd-01.sakura.ne.jp/tiles/japan-20240101.pmtiles",
             "type": "vector",
-            "attribution": "Date 2020/01/01 / <a href=\"https://openstreetmap.org\">&copy OpenStreetMap contributors</a>"
+            "attribution": "Date 2024/01/01 / <a href=\"https://openstreetmap.org\">&copy OpenStreetMap contributors</a>"
         }
     },
     "layers": [
@@ -3451,7 +3451,7 @@
             "type": "fill-extrusion",
             "source": "openmaptiles",
             "source-layer": "building",
-            "minzoom": 13,
+            "minzoom": 14,
             "layout": {
                 "visibility": "visible"
             },
@@ -5271,7 +5271,7 @@
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
                 ],
-                "text-size": 12,
+                "text-size": 14,
                 "icon-image": "{subclass}_11",
                 "text-field": "{name}",
                 "visibility": "visible",
@@ -5284,9 +5284,9 @@
                 "text-max-width": 9
             },
             "paint": {
-                "text-color": "hsl(0, 0%, 41%)",
-                "text-halo-blur": 0.5,
-                "text-halo-color": "hsl(0, 0%, 100%)",
+                "text-color": "hsl(0, 0%, 0%)",
+                "text-halo-blur": 0,
+                "text-halo-color": "#ffffff",
                 "text-halo-width": 1
             },
             "metadata": {},
@@ -5352,7 +5352,7 @@
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
                 ],
-                "text-size": 12,
+                "text-size": 14,
                 "icon-image": "{subclass}_11",
                 "text-field": "{name:ja}",
                 "visibility": "visible",
@@ -5365,9 +5365,9 @@
                 "text-max-width": 9
             },
             "paint": {
-                "text-color": "hsl(0, 0%, 41%)",
-                "text-halo-blur": 0.5,
-                "text-halo-color": "hsl(0, 0%, 100%)",
+                "text-color": "hsl(0, 0%, 0%)",
+                "text-halo-blur": 0,
+                "text-halo-color": "#ffffff",
                 "text-halo-width": 1
             },
             "metadata": {},
@@ -5429,12 +5429,11 @@
             "source-layer": "poi",
             "minzoom": 16,
             "layout": {
-                "icon-size": 1.2,
                 "text-font": [
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
                 ],
-                "text-size": 14,
+                "text-size": 12,
                 "icon-image": "{class}_11",
                 "text-field": "{name}",
                 "visibility": "visible",
@@ -5447,9 +5446,9 @@
                 "text-max-width": 9
             },
             "paint": {
-                "text-color": "hsl(0, 0%, 41%)",
-                "text-halo-blur": 0.5,
-                "text-halo-color": "hsl(0, 0%, 100%)",
+                "text-color": "hsl(0, 0%, 0%)",
+                "text-halo-blur": 0,
+                "text-halo-color": "#ffffff",
                 "text-halo-width": 1
             },
             "metadata": {},
@@ -5515,7 +5514,7 @@
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
                 ],
-                "text-size": 14,
+                "text-size": 12,
                 "icon-image": "{class}_11",
                 "text-field": "{name:ja}",
                 "visibility": "visible",
@@ -5528,9 +5527,9 @@
                 "text-max-width": 9
             },
             "paint": {
-                "text-color": "hsl(0, 0%, 41%)",
-                "text-halo-blur": 0.5,
-                "text-halo-color": "hsl(0, 0%, 100%)",
+                "text-color": "hsl(0, 0%, 0%)",
+                "text-halo-blur": 0,
+                "text-halo-color": "#ffffff",
                 "text-halo-width": 1
             },
             "metadata": {},
@@ -5596,7 +5595,7 @@
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
                 ],
-                "text-size": 14,
+                "text-size": 12,
                 "icon-image": "{class}_11",
                 "text-field": "{name}",
                 "visibility": "visible",
@@ -5661,7 +5660,7 @@
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
                 ],
-                "text-size": 14,
+                "text-size": 12,
                 "icon-image": "{class}_11",
                 "text-field": "{name:ja}",
                 "visibility": "visible",
@@ -5722,7 +5721,7 @@
             "source-layer": "poi",
             "minzoom": 14.2,
             "layout": {
-                "icon-size": 1,
+                "icon-size": 0.9,
                 "text-font": [
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
@@ -5786,7 +5785,7 @@
             "source-layer": "poi",
             "minzoom": 14.2,
             "layout": {
-                "icon-size": 1,
+                "icon-size": 0.9,
                 "text-font": [
                     "Roboto Condensed Italic",
                     "Noto Sans Italic"
