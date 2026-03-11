@@ -1,15 +1,13 @@
 {
 	"site_title": {
-		"ja": "少し昔の地図を見てみよう",
-		"en": "TimeMapTravel"
+		"ja": "少し昔の地図を見てみよう"
 	},
 	"site_subtitle": {
 		"ja": "by OpenStreetMap",
 		"en": "by OpenStreetMap"
 	},
 	"about": {
-		"ja": "少し昔の地図を見てみようについて",
-		"en": "about TimeMapTravel"
+		"ja": "少し昔の地図を見てみようについて"
 	},
 	"about_message": {
 		"ja": "10年ひと昔と言いますが、最近はもっと早く色んな変化が街で起きています。<br>これはOpenStreetMapに残された、少し昔の街を見るWebアプリです。",
