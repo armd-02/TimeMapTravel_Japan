@@ -41,6 +41,15 @@
         "Japan2024": {
             "style": "./tiles/japan-20240101.json"
         },
+        "Japan2025": {
+            "style": "./tiles/japan-20250101.json"
+        },
+        "Japan2025EXPO": {
+            "style": "./tiles/japan-20251013.json"
+        },
+        "Japan2026": {
+            "style": "./tiles/japan-20260101.json"
+        },
         "OSMFJ": {
             "style": "./tiles/osmfj_poi.json"
         }

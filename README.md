@@ -5,14 +5,28 @@
 
 ## 目的
 * 過去のOpenStreetMap(日本)を閲覧するマップ
-* 2010年から2年毎に閲覧可能
+* 2010年から1～2年毎(+EXPO2025最終日)を閲覧可能
 
 ## 利用環境
 * Webブラウザ(PC/タブレット)、スマートフォン対応
 
 ## ライセンス
 * HTML/CSS/JavaScript/JSON : MIT License
-* PMtiles : ODbL
+* PMtiles : ODbL（ダウンロードしてご自由にお使いください）
+
+## PMTilesの保存場所(ファイル名の数字は年月日)
+* https://armd-01.sakura.ne.jp/tiles/japan-20100106.pmtiles
+* https://armd-01.sakura.ne.jp/tiles/japan-20120104.pmtiles
+* https://armd-01.sakura.ne.jp/tiles/japan-20140101.pmtiles
+* https://armd-01.sakura.ne.jp/tiles/japan-20160101.pmtiles
+* https://armd-01.sakura.ne.jp/tiles/japan-20180101.pmtiles
+* https://armd-01.sakura.ne.jp/tiles/japan-20200101.pmtiles
+* https://armd-01.sakura.ne.jp/tiles/japan-20220101.pmtiles
+* https://armd-01.sakura.ne.jp/tiles/japan-20230101.pmtiles
+* https://armd-01.sakura.ne.jp/tiles/japan-20240101.pmtiles
+* https://armd-01.sakura.ne.jp/tiles/japan-20250101.pmtiles
+* https://armd-01.sakura.ne.jp/tiles/japan-20251013.pmtiles
+* https://armd-01.sakura.ne.jp/tiles/japan-20260101.pmtiles
 
 ## 主な更新履歴
 * 2024/05/18 初版公開
@@ -21,3 +35,4 @@
 * 2024/07/16 Maplibreを4.5へ更新。空を表示させる（最大Pitch80度）
              合わせて、2023年と2024年の地図も追加
 * 2026/03/11 クロールされるとタイトルに英語名が返されるので日本語へ設定
+* 2026/04/19 2025年、2026年のPMTilesを追加
