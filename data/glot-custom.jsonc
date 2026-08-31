@@ -1,32 +1,151 @@
 {
-	"site_title": {
-		"ja": "少し昔の地図を見てみよう"
-	},
-	"site_subtitle": {
-		"ja": "by OpenStreetMap",
-		"en": "by OpenStreetMap"
-	},
-	"about": {
-		"ja": "少し昔の地図を見てみようについて"
-	},
-	"about_message": {
-		"ja": "10年ひと昔と言いますが、最近はもっと早く色んな変化が街で起きています。<br>これはOpenStreetMapに残された、少し昔の街を見るWebアプリです。",
-		"en": "It may have been 10 years ago, but recently, many changes have been happening in the city much more quickly. <br>This is a web app that allows you to view old towns left on OpenStreetMap."
-	},
-	"owner": {
-		"ja": "開発サイト",
-		"en": "development site"
-	},
-	"licence_title": {
-		"ja": "利用規約",
-		"en": "Terms of Use"
-	},
-	"licence_message": {
-		"ja": "OpenStreetMap Contributors",
-		"en": "OpenStreetMap Contributors"
-	},
-	"more_message": {
-		"ja": "",
-		"en": ""
-	}
+    "site_title": {
+        "ja": "少し昔の地図を見てみよう",
+        "en": "少し昔の地図を見てみよう"
+    },
+    "site_subtitle": {
+        "ja": "by OpenStreetMap",
+        "en": "by OpenStreetMap"
+    },
+    "about": {
+        "ja": "少し昔の地図を見てみようについて",
+        "en": "About this map"
+    },
+    "about_message": {
+        "ja": "<p>街は、時間とともに少しずつ姿を変えています。<br> 「少し昔の地図を見てみよう」は、OpenStreetMapに残された過去の地図から、 昔の街の様子を見ることができるWebアプリです。</p><p>見たい年月を選んで、いつもの街や思い出の場所を探してみてください。<br>今とは少し違う景色が見つかるかもしれません。</p><p>なお、記事はWikidataの情報を利用しています（記事とOpenStreetMapは関係ありません）。</p>",
+        "en": "<p>The city changes its appearance little by little over time.<br> This web application allows you to see the past appearance of the city from the past maps left in OpenStreetMap.</p><p>Please select the year and month you want to see and look for your usual town or memorable place.<br>You may find a slightly different scenery than now.</p><p>In addition, the articles use information from Wikidata (the articles have nothing to do with OpenStreetMap).</p>"
+    },
+    "owner": {
+        "ja": "開発サイト",
+        "en": "Development site"
+    },
+    "licence_title": {
+        "ja": "利用規約",
+        "en": "Terms of Use"
+    },
+    "licence_message": {
+        "ja": "OpenStreetMap Contributors",
+        "en": "OpenStreetMap Contributors"
+    },
+    "develop_site": {
+        "ja": "開発サイトへ",
+        "en": "Development site"
+    },
+    "official_site": {
+        "ja": "公式サイト",
+        "en": "Official site"
+    },
+    "more_message": {
+        "ja": "",
+        "en": ""
+    },
+    "cat_select": {
+        "ja": "年代選択",
+        "en": "Select Year"
+    },
+    // listtable.js
+    "listCategory": {
+        "ja": "種類",
+        "en": "Category"
+    },
+    "listName": {
+        "ja": "施設名",
+        "en": "Name"
+    },
+    "listComment": {
+        "ja": "💬 ",
+        "en": "💬 "
+    },
+    "listTitle": {
+        "ja": "施設リスト",
+        "en": "Facilities"
+    },
+    "activities": {
+        "ja": "活動履歴",
+        "en": "Activities"
+    },
+    "actdate": {
+        "ja": "確認日",
+        "en": "Disaster Date"
+    },
+    "act_title": {
+        "ja": "題名",
+        "en": "Subject"
+    },
+    "act_attention": {
+        "ja": "写真URLにWikimedia Commonsを指定する時は、タイトルを入力してください(例 File:遊具名.jpg)",
+        "en": "When specifying Wikimedia Commons for the photo URL, enter the title (e.g. File: Play equipment name.jpg)"
+    },
+    "act_date": {
+        "ja": "確認日",
+        "en": "Disaster Date"
+    },
+    "act_address": {
+        "ja": "住所",
+        "en": "Address"
+    },
+    "act_genre": {
+        "ja": "ジャンル",
+        "en": "Genre"
+    },
+    "act_keyword": {
+        "ja": "キーワード",
+        "en": "keyword"
+    },
+    "act_memo": {
+        "ja": "説明",
+        "en": "Detail"
+    },
+    "act_official_url": {
+        "ja": "公式サイトURL",
+        "en": "Public Site URL"
+    },
+    "act_recommend_url": {
+        "ja": "オススメURL",
+        "en": "Recommend URL"
+    },
+    "act_detail_url": {
+        "ja": "詳細URL",
+        "en": "Detail URL"
+    },
+    "act_picture_url1": {
+        "ja": "写真URL1",
+        "en": "Picture URL1"
+    },
+    "act_picture_url2": {
+        "ja": "写真URL2",
+        "en": "Picture URL2"
+    },
+    "act_picture_url3": {
+        "ja": "写真URL3",
+        "en": "Picture URL3"
+    },
+    "act_picture_url4": {
+        "ja": "写真URL4",
+        "en": "Picture URL4"
+    },
+    "act_picture_url5": {
+        "ja": "写真URL5",
+        "en": "Picture URL5"
+    },
+    "act_picture_url6": {
+        "ja": "写真URL6",
+        "en": "Picture URL6"
+    },
+    "act_picture_url7": {
+        "ja": "写真URL7",
+        "en": "Picture URL7"
+    },
+    "act_picture_url8": {
+        "ja": "写真URL8",
+        "en": "Picture URL8"
+    },
+    "act_video_url1": {
+        "ja": "動画URL1",
+        "en": "Video URL1"
+    },
+    "act_license_attention": {
+        "ja": "投稿された情報はオープンデータ(CC0)として公開されます。内緒の情報などは書かないでください。",
+        "en": "The posted information will be published as open data (CC0), so please do not include any confidential information."
+    }
 }

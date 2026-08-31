@@ -1,30 +1,175 @@
 {
     "osm": {
-        "stores": {
+        "historic": {
+            "overpass": [
+                "nwr[\"historic\"]"
+            ],
+            "tags": [
+                "historic"
+            ],
+            "expression": {
+                "poiView": true, // true時はアイコン表示
+                "viewArea": false,
+                "stroke": "#606060",
+                "stroke-width": 0,
+                "fill-opacity": 0.25
+            }
+        },
+        "natural": {
+            "overpass": [
+                "node[\"natural\"=\"tree\"]",
+                "way[\"natural\"=\"tree_row\"]",
+                "way[\"barrier\"=\"hedge\"]"
+            ],
+            "tags": [
+                "natural=tree",
+                "natural=tree_row",
+                "barrier=hedge"
+            ],
+            "expression": {
+                "poiView": false, // true時はアイコン表示
+                "viewArea": true,
+                "stroke": "#50A050",
+                "stroke-width": 4,
+                "fill-opacity": 0.25
+            }
+        },
+        "amenity": {
+            "overpass": [
+                "nwr[\"amenity\"]"
+            ],
+            "tags": [
+                "amenity",
+                "amenity!=parking"
+            ],
+            "expression": {
+                "poiView": true, // true時はアイコン表示
+                "viewArea": false,
+                "stroke": "#606060",
+                "stroke-width": 0,
+                "fill-opacity": 0.25
+            }
+        },
+        "shop": {
+            "overpass": [
+                "nwr[\"shop\"]",
+                "nwr[\"tourism\"]",
+                "nwr[\"leisure\"]"
+            ],
+            "tags": [
+                "shop",
+                "tourism",
+                "leisure",
+                "leisure!=garden"
+            ],
+            "expression": {
+                "poiView": true, // true時はアイコン表示
+                "viewArea": false,
+                "stroke": "#606060",
+                "stroke-width": 0,
+                "fill-opacity": 0.25
+            }
+        },
+        "parking": {
+            "overpass": [
+                "nwr[\"amenity\"=\"parking\"]"
+            ],
+            "tags": [
+                "amenity=parking"
+            ],
+            "expression": {
+                "poiView": false, // true時はアイコン表示
+                "viewArea": true,
+                "stroke": "#F0E040",
+                "stroke-width": 0,
+                "fill-opacity": 0.25
+            }
+        },
+        "indoor": {
+            "scope": {
+                "type": "viewport"
+            },
+            "overpass": [
+                "nwr[\"indoor\"]",
+                "nwr[\"door\"]",
+                "way[\"highway\"=\"corridor\"]"
+            ],
+            "tags": [
+                "indoor",
+                "door",
+                "highway=corridor"
+            ],
+            "expression": {
+                "renderer": "indoor",
+                "poiView": false,
+                "listView": false,
+                "viewArea": true,
+                "renderTags": {
+                    "line": {
+                        "indoor": [
+                            "room",
+                            "area",
+                            "corridor",
+                            "wall"
+                        ],
+                        "highway": [
+                            "corridor"
+                        ]
+                    },
+                    "point": {
+                        "indoor": [
+                            "door"
+                        ],
+                        "door": "*"
+                    }
+                },
+                "styles": {
+                    "room": {
+                        "stroke": "#8b7965"
+                    },
+                    "area": {
+                        "stroke": "#789478"
+                    },
+                    "corridor": {
+                        "stroke": "#9aa0a6",
+                        "highway-stroke": "#2563a8",
+                        "highway-stroke-width": 4
+                    },
+                    "wall": {
+                        "stroke": "#4b5563",
+                        "stroke-width": 2.5
+                    },
+                    "door": {
+                        "color": "#2563a8",
+                        "radius": 3.5
+                    }
+                }
+            }
+        },
+        "edit_poi": {
             "overpass": [
                 "nwr[\"amenity\"]",
                 "nwr[\"shop\"]",
-                "nwr[\"railway\"=\"station\"]",
-                "nwr[\"leisure\"]",
-                "nwr[\"craft\"]",
-                "nwr[\"office\"]"
+                "nwr[\"historic\"]",
+                "nwr[\"tourism\"]",
+                "nwr[\"man_made\"]",
+                "nwr[\"natural\"]"
             ],
             "tags": [
                 "amenity",
                 "shop",
-                "railway",
-                "leisure",
-                "craft",
-                "office"
+                "historic",
+                "tourism",
+                "man_made",
+                "natural"
             ],
             "expression": {
-                "stroke": "#c0c0c0",
-                "stroke-width": 1
-            },
-            "titles": [
-                "name",
-                "operator"
-            ]
+                "poiView": true, // true時はアイコン表示
+                "viewArea": true,
+                "stroke": "#606060",
+                "stroke-width": 0,
+                "fill-opacity": 0.25
+            }
         }
     }
 }

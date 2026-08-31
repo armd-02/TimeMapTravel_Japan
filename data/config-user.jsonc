@@ -1,101 +1,242 @@
-// Community Mapmaker User Config
+// Time Map Travel Japan User Config
 {
     "map": {
-        "tileName": "Japan2010", // タイル一覧は config-system.jsonc へ
+        "changeMap": true,
+        "tileName": "Japan2010",
         "viewCenter": [
             135.4967874,
             34.7033348
         ],
-        "viewPitch": 40,
+        "viewPitch": 20,
+        "maxPitch": 80,
         "maxBounds": "",
-        "_maxBounds": [
-            [
-                135.4,
-                34.65
-            ],
-            [
-                135.55,
-                34.8
-            ]
-        ],
-        "initZoom": 12,
+        "initZoom": 5,
         "maxZoom": 23,
-        "modalZoom": 19 // モーダルダイアログ表示時のズームサイズ   
+        "detailZoom": 19,
+        "zoomMessageThreshold": 7,
+        "textFont": [
+            "Noto Sans Bold"
+        ],
+        "textSize": 12,
+        "polygonMarker": {
+            "fill-color": "#CC6666",
+            "fill-opacity": 0.3
+        }
     },
-    "view": {
+    "news": {
+        "use": true, // 地図の対象年・表示地域に対応するニュースを表示する
+        "sourceBaseUrl": "https://armd-01.sakura.ne.jp/timeline/data/",
+        "prefectureFile": "./data/prefectures.min.geojson",
+        "regionalMinZoom": 9.5, // このズーム以上は全国ニュースから都道府県ニュースへ切り替える
+        "nationalLimitPerMonth": 5, // 全国ニュースを1か月あたり何件表示するか
+        "displayDuration": 10000 // ニュース1件を表示する時間（ミリ秒）
+    },
+    "minimap": {
+        "use": false,
+        "height": 200,
+        "initZoom": 2,
+        "viewCenter": [
+            135,
+            34
+        ]
+    },
+    "icon": {
+        "fgPath": "icon",
+        "bgPath": "image",
+        "shadow": 0.7,
+        "attention": 0.8,
+        "green": 0.6,
+        "middle": 0.6,
+        "visited": 0.4,
+        "normal": 0.6,
+        "flag": 0.5,
+        "textFont": [
+            "Noto Sans Regular"
+        ],
+        "textSize": 12,
+        "textViewZoom": 13,
+        "markerColors": {
+            "hover": {
+                "stroke": "#e9a05b"
+            },
+            "attention": {
+                "fill": "#ffffff",
+                "stroke": "#888888"
+            },
+            "green": {
+                "fill": "#ffffff",
+                "stroke": "#51b3a1"
+            },
+            "middle": {
+                "fill": "#ffffff",
+                "stroke": "#4d77ac"
+            },
+            "normal": {
+                "fill": "#ffffff",
+                "stroke": "#bfbfe1"
+            },
+            "visited": {
+                "fill": "#ffffff",
+                "stroke": "#9c9c9c"
+            }
+        }
+    },
+    "poiView": {
+        "poiActLoad": false,
         "poiZoom": {
-            // アイコンの前後位置は後ろの方が手前になる
             "activity": 7
         },
-        "poiFilter": "filter" // listTable更新時 all:全て / filter:絞り込み / "":非連動
+        "mobilePoiZoom": {},
+        "editZoom": {}
     },
-    "etc": {
-        "editMode": false, // 編集メニューの表示/非表示
-        "thumbnailWidth": "240",
-        "splashUrl": "./image/splash.png"
+    "poiData": {
+        "maxFeatures": 12000,
+        "pruneThreshold": 15000,
+        "applyToStatic": false
     },
-    "selectItem": { // 選択リストの内容を手動記載 / 空の時は [] とする
+    "selectItem": {
+        "showAutoOption": false, // 「🌏おまかせ」を表示するか
+        "default": "Japan2010",
         "menu": {
-            "2010年01月の地図(日本)": "Japan2010",
-            "2012年01月の地図(日本)": "Japan2012",
-            "2014年01月の地図(日本)": "Japan2014",
-            "2016年01月の地図(日本)": "Japan2016",
-            "2018年01月の地図(日本)": "Japan2018",
-            "2020年01月の地図(日本)": "Japan2020",
-            "2022年01月の地図(日本)": "Japan2022",
-            "2023年01月の地図(日本)": "Japan2023",
-            "2024年01月の地図(日本)": "Japan2024",
-            "2025年01月の地図(日本)": "Japan2025",
-            "2025年10月の地図(日本/万博終了日)": "Japan2025EXPO",
-            "2026年01月の地図(日本)": "Japan2026",
+            "2010年01月の地図（日本）": "Japan2010",
+            "2012年01月の地図（日本）": "Japan2012",
+            "2014年01月の地図（日本）": "Japan2014",
+            "2016年01月の地図（日本）": "Japan2016",
+            "2018年01月の地図（日本）": "Japan2018",
+            "2020年01月の地図（日本）": "Japan2020",
+            "2022年01月の地図（日本）": "Japan2022",
+            "2023年01月の地図（日本）": "Japan2023",
+            "2024年01月の地図（日本）": "Japan2024",
+            "2025年01月の地図（日本）": "Japan2025",
+            "2025年10月の地図（日本・万博終了日）": "Japan2025EXPO",
+            "2026年01月の地図（日本）": "Japan2026",
             "最新の世界地図": "OSMFJ"
         },
-        "action": "ChangeMap" // ChangeMap:背景地図切り替え
+        "action": "ChangeMap"
+    },
+    "sideBar": {
+        "everyView": false,
+        "initView": ""
     },
     "listTable": {
-        "category": "activity", // カテゴリ選択 / activity:アクティビティリスト / tags:タグ
-        "target": "activity", // target名:overpass名を表示 / activity:google sheetsを表示 / tags:osm poi種別名を表示
-        "allActs": true, // true: 全てのactivityを常に表示 / false: 画面内のActivityのみ表示
+        "backgroundImage": "./image/bgimage.png",
+        "category": "menu",
+        "target": "activity",
+        "allActs": true,
         "playback": {
             "view": false,
             "zoomLevel": 15,
             "timer": 4000
         },
-        "download": false
+        "download": false,
+        "csvColumn": [
+            "id",
+            "categoryJa",
+            "name",
+            "parentName",
+            "tag",
+            "categoryData",
+            "iconFile",
+            "lng",
+            "lat"
+        ]
+    },
+    "thumbnail": {
+        "use": false,
+        "limits": 20,
+        "slideThumbWidth": "320",
+        "modalThumbWidth": "800"
     },
     "google": {
-        "Analytics": "",
         "AppScript": "",
         "targetName": "activity"
     },
     "static": {
-        "mode": false,
-        "osmjson": ""
+        "use": false,
+        "osmjsons": []
+    },
+    "indoor": {
+        "use": false,
+        "defaultLevel": "0",
+        "floorHeightMeters": 3.66,
+        "buildingLevelHeightMeters": 3.66,
+        "floorOffsetMeters": 0.2,
+        "backgroundTransportationOpacity": 0.08,
+        "buildingSource": {
+            "type": "vectorTile",
+            "styleSource": "openmaptiles",
+            "dedicatedSource": "indoor-building-tiles",
+            "sourceUrl": "https://tile.openstreetmap.jp/data/planet.json",
+            "sourceLayer": "building",
+            "heightProperty": "render_height",
+            "minHeightProperty": "render_min_height",
+            "deduplicate": true
+        },
+        "fallbackLevels": {
+            "highway=corridor": "0"
+        },
+        "underground": {
+            "useWithoutBuilding": false,
+            "activationRadiusMeters": 60
+        },
+        "largeBuildingActivation": {
+            "use": false,
+            "minZoom": 15,
+            "referenceZoom": 18,
+            "viewportCoverageRatio": 1.0,
+            "groupNearbyBuildings": false
+        },
+        "buildingGroup": {
+            "smallBuildingAreaSquareMeters": 1500,
+            "groupRadiusMeters": 50,
+            "activationRadiusMeters": 50,
+            "requireIndoorPoi": true
+        },
+        "levels": {
+            "discoverFromData": false,
+            "labels": {
+                "roof": "屋上"
+            },
+            "order": [
+                "0"
+            ]
+        },
+        "control": {
+            "view": false,
+            "urlParameter": "level",
+            "label": "フロア"
+        }
     },
     "wikipedia": {
         "marker": "wikipedia.svg",
         "api_": "wikipedia.org/w/api.php?format=json&action=query&prop=extracts%7Cimages&exintro=&explaintext=&titles=",
         "api": "wikipedia.org/api/rest_v1/page/summary/",
         "domain": "wikipedia.org",
-        "tag": "wikipedia",
-        "image": true
+        "tag": "wikipedia"
+    },
+    "etc": {
+        "localSave": "",
+        "reverseIcon": false,
+        "editMode": false,
+        "splashUrl": "./image/splash.png",
+        "loadingUrl": "./image/loading.gif",
+        "storageKey": "timemaptravel-intro-last-shown"
     },
     "menu": {
         "main": [
-            // トップメニュー一覧
             {
                 "glot-model": "about",
-                "linkto": "javascript:cMapmaker.licence()",
+                "linkto": "javascript:cMapMaker.about()",
                 "divider": false
             },
             {
                 "glot-model": "licence_title",
-                "linkto": "javascript:cMapmaker.licence()",
+                "linkto": "javascript:cMapMaker.licence()",
                 "divider": false
             },
             {
                 "glot-model": "develop_site",
-                "linkto": "https://github.com/armd-02/TimeMapTravel_Kansai",
+                "linkto": "https://github.com/armd-02/TimeMapTravel_Japan",
                 "divider": false
             },
             {
@@ -104,40 +245,21 @@
                 "divider": false
             }
         ],
-        // 詳細表示のハンバーガーメニュー
+        "mainSystem": [],
         "modal": [
-            /*{
-                "glot-model": "act_add",
-                "linkto": "javascript:modal_activities.edit({form:'Playgrounds'})",
-                "divider": false
-            },*/
             {
-                "glot-model": "osm_open",
-                "linkto": "javascript:winCont.osm_open(cMapMaker.open_osmid)",
+                "glot-model": "copyShareLink",
+                "linkto": "javascript:cMapMaker.shareURL()",
                 "divider": false
             },
             {
-                "glot-model": "button_close",
-                "linkto": "javascript:winCont.modal_close()",
+                "glot-model": "osm_open",
+                "linkto": "javascript:winCont.osm_open(cMapMaker.openOSMid)",
                 "divider": false
             }
         ],
-        // 詳細モーダルの追加ボタン 
-        "buttons": [
-            /*
-            {
-                "btn_class": "btn btn-light border-secondary mr-2",
-                "code": "javascript:modal_activities.edit({form:'Welcome2024'})",
-                "icon_class": "fas fa-plus",
-                "btn_glot_name": "add_activity"
-            },
-            */
-            {
-                "btn_class": "btn btn-light border-secondary",
-                "code": "javascript:cMapMaker.shareURL()",
-                "icon_class": "fas fa-clone",
-                "btn_glot_name": "share_link"
-            }
-        ]
+        "activities": [],
+        "editActivity": [],
+        "visited": []
     }
 }

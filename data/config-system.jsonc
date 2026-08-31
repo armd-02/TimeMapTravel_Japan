@@ -1,145 +1,104 @@
-// Community Mapmaker System Config
+// Time Map Travel Japan System Config
 {
-    "icon": {
-        "path": "maki-icon",
-        "normal": 32,
-        "attention": 48
+    "wikipedia": {
+        "marker": "wikipedia.svg",
+        "api_": "wikipedia.org/w/api.php?format=json&action=query&prop=extracts%7Cimages&exintro=&explaintext=&titles=",
+        "api": "wikipedia.org/api/rest_v1/page/summary/",
+        "domain": "wikipedia.org",
+        "tag": "wikipedia",
+        "image": true
     },
     "system": {
         "OverPassServer": [
-            "https://overpass.openstreetmap.jp/api/interpreter",
-            "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
-            "https://overpass.kumi.systems/api/interpreter",
-            "https://overpass-api.de/api/interpreter"
-        ]
+            "https://armd-01.sakura.ne.jp/api/interpreter",
+            "https://overpass-api.de/api/interpreter",
+            "https://overpass.private.coffee/api/interpreter"
+        ],
+        "NoChacheServer": "https://overpass-api.de/api/interpreter"
     },
     "tile": {
         "Japan2010": {
-            "style": "./tiles/japan-20100106.json"
+            "style": "./tiles/japan-20100106.json",
+            "name": "2010年01月の地図（日本）",
+            "year": 2010,
+            "skip": false
         },
         "Japan2012": {
-            "style": "./tiles/japan-20120104.json"
+            "style": "./tiles/japan-20120104.json",
+            "name": "2012年01月の地図（日本）",
+            "year": 2012,
+            "skip": false
         },
         "Japan2014": {
-            "style": "./tiles/japan-20140101.json"
+            "style": "./tiles/japan-20140101.json",
+            "name": "2014年01月の地図（日本）",
+            "year": 2014,
+            "skip": false
         },
         "Japan2016": {
-            "style": "./tiles/japan-20160101.json"
+            "style": "./tiles/japan-20160101.json",
+            "name": "2016年01月の地図（日本）",
+            "year": 2016,
+            "skip": false
         },
         "Japan2018": {
-            "style": "./tiles/japan-20180101.json"
+            "style": "./tiles/japan-20180101.json",
+            "name": "2018年01月の地図（日本）",
+            "year": 2018,
+            "skip": false
         },
         "Japan2020": {
-            "style": "./tiles/japan-20200101.json"
+            "style": "./tiles/japan-20200101.json",
+            "name": "2020年01月の地図（日本）",
+            "year": 2020,
+            "skip": false
         },
         "Japan2022": {
-            "style": "./tiles/japan-20220101.json"
+            "style": "./tiles/japan-20220101.json",
+            "name": "2022年01月の地図（日本）",
+            "year": 2022,
+            "skip": false
         },
         "Japan2023": {
-            "style": "./tiles/japan-20230101.json"
+            "style": "./tiles/japan-20230101.json",
+            "name": "2023年01月の地図（日本）",
+            "year": 2023,
+            "skip": false
         },
         "Japan2024": {
-            "style": "./tiles/japan-20240101.json"
+            "style": "./tiles/japan-20240101.json",
+            "name": "2024年01月の地図（日本）",
+            "year": 2024,
+            "skip": false
         },
         "Japan2025": {
-            "style": "./tiles/japan-20250101.json"
+            "style": "./tiles/japan-20250101.json",
+            "name": "2025年01月の地図（日本）",
+            "year": 2025,
+            "skip": false
         },
         "Japan2025EXPO": {
-            "style": "./tiles/japan-20251013.json"
+            "style": "./tiles/japan-20251013.json",
+            "name": "2025年10月の地図（日本・万博終了日）",
+            "year": 2025,
+            "skip": false
         },
         "Japan2026": {
-            "style": "./tiles/japan-20260101.json"
+            "style": "./tiles/japan-20260101.json",
+            "name": "2026年01月の地図（日本）",
+            "year": 2026,
+            "skip": false
         },
         "OSMFJ": {
-            "style": "./tiles/osmfj_poi.json"
+            "style": "./tiles/osmfj_poi.json",
+            "name": "最新の世界地図",
+            "year": null,
+            "skip": false
         }
-        /*
-        "OSM_Standard": {
-            "style": {
-                "version": 8,
-                "sources": {
-                    "rtile": {
-                        "type": "raster",
-                        "tiles": [
-                            "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                        ],
-                        "tileSize": 256,
-                        "maxzoom": 19,
-                        "attribution": "<a href=\"https://openstreetmap.org\">&copy OpenStreetMap contributors</a>"
-                    }
-                },
-                "layers": [
-                    {
-                        "id": "raster-tiles",
-                        "type": "raster",
-                        "source": "rtile"
-                    }
-                ]
-            }
-        },
-        */
-        /*
-        "GSI_pale": {
-            "style": {
-                "version": 8,
-                "sources": {
-                    "rtile": {
-                        "type": "raster",
-                        "tiles": [
-                            "https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png"
-                        ],
-                        "tileSize": 256,
-                        "maxzoom": 18,
-                        "attribution": "<a href='https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html'>国土地理院(淡色) | &copy OpenStreetMap contributors</a>"
-                    }
-                },
-                "layers": [
-                    {
-                        "id": "raster-tiles",
-                        "type": "raster",
-                        "source": "rtile"
-                    }
-                ]
-            }
-        },
-        "GSI_ort": {
-            "style": {
-                "version": 8,
-                "sources": {
-                    "rtile": {
-                        "type": "raster",
-                        "tiles": [
-                            "https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg"
-                        ],
-                        "tileSize": 256,
-                        "maxzoom": 18,
-                        "attribution": "<a href='https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html'>国土地理院(オルソ画像) | &copy OpenStreetMap contributors</a>"
-                    }
-                },
-                "layers": [
-                    {
-                        "id": "raster-tiles",
-                        "type": "raster",
-                        "source": "rtile",
-                    }
-                ]
-            }
-        }
-        */
     },
     "menu_list": {
         "template": "<a class='dropdown-item'><span></span></a><span class='dropdown-item'></span>",
         "divider": "<div class='dropdown-divider'></div>"
-    },
-    "effect": {
-        "icon": {
-            "x": 0,
-            "y": 0
-        },
-        "text": {
-            "size": 12,
-            "view": true
-        }
     },
     "style": {
         "circle": {
