@@ -1,7 +1,7 @@
 # 少し昔の地図を見てみよう
 
 ## Webサイト
-* https://armd-02.github.io/TimeMapTravel_Japan/
+* http://timemap.openacrossbase.net/
 
 ## 目的
 * 過去のOpenStreetMap(日本)を閲覧するマップ
